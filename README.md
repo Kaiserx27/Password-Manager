@@ -1,4 +1,4 @@
-# Password Manager – Spring Boot
+# Password Manager 
 
 A web-based password manager application built with **Spring Boot**, focused on
 **security**, **encryption**, and **multi-factor authentication (MFA)**.
