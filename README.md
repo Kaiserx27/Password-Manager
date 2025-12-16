@@ -1,27 +1,27 @@
 # Password Manager – Spring Boot
 
-Webowa aplikacja do bezpiecznego przechowywania haseł z wykorzystaniem
-szyfrowania oraz wieloskładnikowego uwierzytelniania (MFA).
+A web-based password manager application built with **Spring Boot**, focused on
+**security**, **encryption**, and **multi-factor authentication (MFA)**.
 
-Projekt został stworzony w celach edukacyjnych oraz jako element portfolio
-(Java / Spring Boot / Security).
+This project was created for educational purposes and as part of a personal
+portfolio demonstrating secure application development in Java.
 
 ---
 
-## Funkcjonalności
+##  Features
 
-- Rejestracja i logowanie użytkownika
-- Hasło główne (hashowane)
-- Szyfrowanie haseł (AES)
+- User authentication (login system)
+- Master password hashing
+- Encrypted password storage (AES)
 - Multi-Factor Authentication (MFA)
-- Generator bezpiecznych haseł
-- Webowy interfejs (Thymeleaf)
-- Baza danych (H2 – łatwa zmiana na PostgreSQL)
-- Spring Security
+- Secure password generator
+- Web interface (Thymeleaf)
+- Database integration (H2, easily switchable to PostgreSQL)
+- Spring Security protection
 
 ---
 
-## 🛠️ Technologie
+##  Technologies Used
 
 - Java 17+
 - Spring Boot
@@ -33,20 +33,24 @@ Projekt został stworzony w celach edukacyjnych oraz jako element portfolio
 
 ---
 
-## Architektura
-- **Controller** – obsługa żądań HTTP
-- **Service** – logika biznesowa
-- **Repository** – komunikacja z bazą danych
-- **Entity** – mapowanie danych
-- **Security** – konfiguracja uwierzytelniania
+##  Project Architecture
+
+The application follows the **MVC (Model–View–Controller)** pattern:
+
+- **Controller** – handles HTTP requests
+- **Service** – business logic
+- **Repository** – database access layer
+- **Entity** – database models
+- **Security** – authentication and authorization configuration
 
 ---
 
-## Bezpieczeństwo
+##  Security Overview
 
-- Hashowanie haseł użytkowników
-- Szyfrowanie zapisanych haseł (AES)
-- MFA (kod jednorazowy)
-- Ochrona endpointów przez Spring Security
+- Passwords are stored as cryptographic hashes
+- Stored credentials are encrypted using AES
+- MFA adds an extra security layer during login
+- All sensitive endpoints are protected by Spring Security
+
 
 
